@@ -1,0 +1,24 @@
+
+spring:
+  freemarker:
+    check-template-location: false
+  liquibase:
+    enabled: false
+  jpa:
+    properties:
+      hibernate:
+       cache:
+        use_second_level_cache: false
+    open-in-view: true
+    generate-ddl: true
+  aop:
+    proxy-target-class: false
+
+
+server:
+  port: 8080
+  servlet:
+    context-path:
+      "/workflow"
+
+

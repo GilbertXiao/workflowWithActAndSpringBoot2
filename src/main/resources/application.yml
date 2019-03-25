@@ -3,29 +3,31 @@ spring:
   freemarker:
     check-template-location: false
   liquibase:
-    enabled: false
+    enabled: true
+    change-log: classpath:META-INF/liquibase/activiti-app-db-changelog.xml
   jpa:
     properties:
       hibernate:
        cache:
         use_second_level_cache: false
     open-in-view: true
-    generate-ddl: true
+    generate-ddl: false
   aop:
     proxy-target-class: false
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/workflow2?characterEncoding=UTF-8&&useUnicode=true&&useSSL=false
     username: gilxyj
-    password: sdfm1234
+    password:
 
 
 server:
   port: 8080
   servlet:
-    context-path: "/workflow"
+    context-path: "/wf"
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+

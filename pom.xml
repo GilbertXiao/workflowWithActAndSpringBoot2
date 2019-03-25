@@ -103,7 +103,6 @@
                     <groupId>org.slf4j</groupId>
                 </exclusion>
 
-
             </exclusions>
         </dependency>
         <dependency>
@@ -119,6 +118,7 @@
                     <artifactId>commons-logging</artifactId>
                     <groupId>commons-logging</groupId>
                 </exclusion>
+
             </exclusions>
         </dependency>
     </dependencies>
@@ -134,7 +134,7 @@
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
-                    <path>/workflow</path>
+                    <path>/wf</path>
                     <port>8080</port>
                     <protocol>org.apache.coyote.http11.Http11NioProtocol</protocol>
                     <systemProperties>

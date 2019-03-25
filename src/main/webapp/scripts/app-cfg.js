@@ -10,8 +10,8 @@ var ACTIVITI = ACTIVITI || {};
 
 ACTIVITI.CONFIG = {
 	'onPremise' : true,
-	'contextRoot' : '/workflow',
-	'webContextRoot' : '/workflow'
+	'contextRoot' : '/wf',
+	'webContextRoot' : '/wf'
 };
 /*
  * Copyright 2005-2015 Alfresco Software, Ltd. All rights reserved.
